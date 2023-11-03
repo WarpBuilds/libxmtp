@@ -1,4 +1,4 @@
-# Quick Example of interacting with did:eth contract in wasm
+# Super Quick Example of interacting with did:eth contract in wasm
 
 copy of ethers-rs example with some small modifications, and a simple HTML frontend for submitting attributes
 
