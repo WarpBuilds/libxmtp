@@ -1,0 +1,18 @@
+{
+    "name": "did-registry-test",
+    "license": "MIT OR Apache-2.0",
+    "private": "true",
+    "scripts": {
+        "build": "webpack",
+        "serve": "webpack-dev-server"
+    },
+    "devDependencies": {
+        "@wasm-tool/wasm-pack-plugin": "^1.6",
+        "ganache-cli": "^6.12",
+        "html-webpack-plugin": "^5.5",
+        "text-encoding": "^0.7",
+        "webpack": "^5.75",
+        "webpack-cli": "^5.0",
+        "webpack-dev-server": "^4.11"
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>DID Registry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<style>
+  #transactionReceipt {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  #spinner {
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+  <h1> Did Registry Example </h1>
+  <div id="loading" style="display: none;">
+    <div id="spinner" class="spinner-border text-primary" role="status"></div>
+    <div id="spinnerText"></div>
+  </div>
+  <div>
+    <input type="text" id="attributeInput" placeholder="Enter attribute value"></input>
+    <button id="setAttributeButton">Set Attribute</button>
+  </div>
+
+  <div>
+    <h5> Transaction Receipt </h5>
+    <p id = "transactionReceipt">
+
+
+    </p>
+  </div>
+
+  <script src="index.js" defer></script> 
+</body>
+</html>

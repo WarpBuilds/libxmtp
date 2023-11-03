@@ -9,6 +9,7 @@ members = [
   "xmtp_proto",
   "xmtp_v2",
   "xmtp_mls",
+  "evm_contracts"
 ]
 
 exclude = [
