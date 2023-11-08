@@ -19,8 +19,10 @@ pub const PHRASE: &str =
     "stuff inherit faith park genre spread huge knee ecology private marble supreme";
 
 pub fn key(index: u32) -> LocalWallet {
-    MnemonicBuilder::<English>::default().phrase(PHRASE).index(index).unwrap().build().unwrap()
+    MnemonicBuilder::<English>::default()
+        .phrase(PHRASE)
+        .index(index)
+        .unwrap()
+        .build()
+        .unwrap()
 }
-
-
-
