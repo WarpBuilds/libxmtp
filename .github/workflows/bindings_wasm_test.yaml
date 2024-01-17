@@ -5,12 +5,12 @@ on:
   pull_request:
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: warpdev-ubuntu-latest-x64-2x
     steps:
       - uses: actions/checkout@v2
-      # - run: source /etc/environment
-      - name: Setup ssh session
-        uses: Warpbuilds/action-debugger@v1.3
+      - run: echo $PATH
+      # - name: Setup ssh session
+      #   uses: Warpbuilds/action-debugger@v1.3
       - run: dev/up
       - uses: nanasess/setup-chromedriver@master
       - run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
