@@ -8,6 +8,7 @@ jobs:
     runs-on: warp-ubuntu-latest-x64-4x
     steps:
       - uses: actions/checkout@v2
+      - run: echo $PATH
       - name: Setup ssh session
         uses: Warpbuilds/action-debugger@v1.3
       - run: dev/up
