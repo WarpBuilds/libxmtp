@@ -8,6 +8,8 @@ jobs:
     runs-on: warp-ubuntu-latest-x64-4x
     steps:
       - uses: actions/checkout@v2
+      - name: Setup ssh session
+        uses: Warpbuilds/action-debugger@v1.3
       - run: dev/up
       - uses: nanasess/setup-chromedriver@master
       - run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
