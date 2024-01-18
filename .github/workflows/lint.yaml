@@ -15,8 +15,6 @@ jobs:
           workspaces: |
             .
             bindings_ffi
-      - name: Setup ssh session
-        uses: Warpbuilds/action-debugger@v1.3
       - uses: actions-rs/clippy-check@v1
         name: Lint main workspace
         with:
