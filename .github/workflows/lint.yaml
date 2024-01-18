@@ -15,10 +15,10 @@ jobs:
           workspaces: |
             .
             bindings_ffi
-      - uses: actions-rs/clippy-check@v1
       - name: Setup ssh session
         uses: Warpbuilds/action-debugger@v1.3
-      - name: Lint main workspace
+      - uses: actions-rs/clippy-check@v1
+        name: Lint main workspace
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           name: workspace
