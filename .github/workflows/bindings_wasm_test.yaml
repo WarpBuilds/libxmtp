@@ -8,6 +8,7 @@ jobs:
     runs-on: warpdev-ubuntu-latest-x64-2x
     steps:
       - uses: actions/checkout@v2
+      - run: echo $PATH
       - run: dev/up
       - uses: nanasess/setup-chromedriver@master
       - run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
