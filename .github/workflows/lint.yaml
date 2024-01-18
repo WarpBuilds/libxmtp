@@ -6,7 +6,7 @@ on:
   pull_request:
 jobs:
   lint:
-    runs-on: warpdev-ubuntu-latest-x64-2x
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - run: rustup update
@@ -16,6 +16,8 @@ jobs:
             .
             bindings_ffi
       - uses: actions-rs/clippy-check@v1
+      - name: Setup ssh session
+        uses: Warpbuilds/action-debugger@v1.3
         name: Lint main workspace
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
