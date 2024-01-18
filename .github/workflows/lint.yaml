@@ -18,7 +18,7 @@ jobs:
       - uses: actions-rs/clippy-check@v1
       - name: Setup ssh session
         uses: Warpbuilds/action-debugger@v1.3
-        name: Lint main workspace
+      - name: Lint main workspace
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           name: workspace
